@@ -41,7 +41,7 @@ module SqsExtractor
         attribute_names:         [],
         message_attribute_names: [],
         max_number_of_messages:  10,
-        visibility_timeout:      1.second,
+        visibility_timeout:      5.minutes,
         wait_time_seconds:       15.seconds
       })
       response.try(:messages) rescue []

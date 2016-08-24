@@ -28,7 +28,6 @@ module SqsExtractor
         break if response_messages.empty?
         messages << response_messages.map(&:body)
         puts "Downloaded #{response_messages.size} messages, #{Time.current}"
-        break
       end
       puts "Finished downloading messages"
 
